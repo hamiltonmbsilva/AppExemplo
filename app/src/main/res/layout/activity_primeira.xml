@@ -57,7 +57,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/BotaoTela3"
+                android:id="@+id/VoltarTela4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -68,7 +68,7 @@
                 android:id="@+id/BotaoTela2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/BotaoTela3"
+                android:layout_above="@+id/VoltarTela4"
                 android:layout_centerHorizontal="true"
                 android:text="Vá Para Tela 2" />
 

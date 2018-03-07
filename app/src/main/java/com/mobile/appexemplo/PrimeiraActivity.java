@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.mobile.appexemplo.model.Pessoa;
+
 
 public class PrimeiraActivity extends AppCompatActivity {
 
@@ -29,6 +31,9 @@ public class PrimeiraActivity extends AppCompatActivity {
                 Intent itn = new Intent(getApplicationContext(), SegundaActivity.class);
 
                 itn.putExtra( "nome", CampoNome.getText());
+                Pessoa p = new Pessoa("Hamilton", 15,8000);
+
+                itn.putExtra("pessoa",p);
 
                 startActivityForResult(itn,Segunda_Tela);
             }
@@ -62,7 +67,7 @@ public class PrimeiraActivity extends AppCompatActivity {
 
     private void binding() {
         BotaoTela2 = findViewById(R.id.BotaoTela2);
-        BotaoTela3 = findViewById(R.id.BotaoTela3);
+        BotaoTela3 = findViewById(R.id.VoltarTela4);
         CampoNome = findViewById(R.id.CampoNome);
     }
 }

@@ -36,7 +36,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/CampoTextoTela4"
                 android:layout_width="37dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -51,7 +51,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/BotaoTela3"
+                android:id="@+id/BotaoVoltarTela2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"

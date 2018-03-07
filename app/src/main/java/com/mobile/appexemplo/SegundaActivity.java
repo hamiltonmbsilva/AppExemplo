@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mobile.appexemplo.model.Pessoa;
+
 public class SegundaActivity extends AppCompatActivity {
 
     TextView resultado;
@@ -24,6 +26,7 @@ public class SegundaActivity extends AppCompatActivity {
 
         String auxNome = getIntent().getExtras().getString("nome");
         resultado.setText(auxNome);
+        Pessoa p = (Pessoa) getIntent().getExtras().getSerializable("pessoa");
 
         vaiTela4.setOnClickListener(new View.OnClickListener() {
             @Override
