@@ -28,6 +28,8 @@ public class PrimeiraActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent itn = new Intent(getApplicationContext(), SegundaActivity.class);
 
+                itn.putExtra( "nome", CampoNome.getText());
+
                 startActivityForResult(itn,Segunda_Tela);
             }
         });
